@@ -61,10 +61,27 @@ button {
 }
 
 .container {
-  max-width: 1136px;
-  padding-left: 16px;
-  padding-right: 16px;
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 /*--------------- header ---------------*/
@@ -150,32 +167,67 @@ button {
 
 /*--------------- startpage ---------------*/
 
-.startpage {
-  padding-top: 381px;
-  padding-bottom: 40px;
+.startpage-section {
+  padding: 0 20px 40px 20px;
 
+}
+
+.startpage-container {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main.jpg);
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main_mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 30px;
-  max-width: 1136px;
+  min-width: 280px;
   margin: 0 auto;
+  padding: 395px 20px 20px;
 }
 
-.startpage-container {
-  padding-right: 40px;
-  padding-left: 40px;
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .startpage-container {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main_mob_2x.jpg);
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .startpage-container {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main_tab_1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .startpage-container {
+      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main_tab_2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .startpage-container {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main_1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .startpage-container {
+      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main_2x.jpg);
+    }
+  }
+}
+
 
 .startpage-title {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21429;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-  max-width: 484px;
+  max-width: 295px;
   margin-bottom: 32px;
 }
 
@@ -183,16 +235,19 @@ button {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 32px;
 }
 
 .startpage-buttons-box {
   display: flex;
-  gap: 15px;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .startpage-button-buynow {
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 12px 28px;
   background-color: #fd9222;
   font-weight: 600;
   font-size: 14px;
@@ -212,7 +267,7 @@ button {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 100px;
-  padding: 14px 40px;
+  padding: 12px 28px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -235,8 +290,8 @@ button {
   gap: 14px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28571;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   color: #fff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -250,8 +305,8 @@ button {
   fill: #fd9222;
   border-radius: 100%;
   background-color: #fff;
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -261,6 +316,59 @@ button {
 .startpage-scrole-link:hover .startpage-scrole-svg {
   fill: #fff;
   background-color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .startpage-section {
+    padding: 0 32px 20px 32px;
+  }
+
+  .container {
+    min-width: 768px;
+  }
+
+  .startpage-container {
+    padding: 671px 40px 40px;
+    min-width: 704px;
+  }
+
+  .startpage-title {
+    font-size: 28px;
+    max-width: 484px;
+  }
+
+  .startpage-button-buynow {
+    padding: 14px 40px;
+  }
+
+  .startpage-button-howitsmade {
+    padding: 14px 40px;
+  }
+
+  .startpage-scrole-link {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .startpage-scrole-svg {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+
+  .startpage-container {
+    padding: 381px 40px 40px;
+    min-width: 1136px;
+  }
+
+  .startpage-section {
+    padding: 0 32px 40px 32px;
+  }
 }
 
 /*--------------- benefits ---------------*/
