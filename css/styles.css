@@ -520,12 +520,10 @@ button {
 }
 
 .ingridients-container {
-  max-width: 335px;
+  min-width: 335px;
+  max-width: 375px;
+  padding: 0 20px;
 }
-
-.container {}
-
-.title-two {}
 
 .ingredients-title-two {
   font-family: "Montserrat", sans-serif;
@@ -553,11 +551,8 @@ button {
 }
 
 .ingridients-item {
-  /* padding: 32px 49px 28px 50px; */
   border-radius: 15px;
   position: relative;
-  /* width: 335px;
-  height: 270px; */
 }
 
 .ingridients-item-orange {
@@ -566,6 +561,7 @@ button {
 
 .ingridients-item-white {
   background-color: #fff;
+  border: 1px solid #fd9222;
 }
 
 .ingridients-item-black {
@@ -580,25 +576,152 @@ button {
   height: 24px;
 }
 
-.ingridients-svgbox-svg {}
-
-.ingredients-svgbox-img {}
-
 .ingredients-imgbox {
   padding: 32px 49px 16px 50px;
 }
 
-.ingredients-imgbox-img {}
-
-.title-three {}
+.ingredients-imgbox-img {
+  width: 236px;
+  height: 176px;
+}
 
 .ingredients-title-three {
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fff;
+  padding: 0 0 28px 28px;
 }
 
-.ingredients-title-three-black {}
+.ingredients-title-three-black {
+  color: #111;
+}
+
+.ingridients-item-none {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+
+  }
+
+  .ingridients {
+    padding: 50px 0;
+  }
+
+  .ingridients-container {
+    padding: 0 32px;
+  }
+
+  .ingridients-item-none {
+    display: block;
+  }
+
+  .ingridients-item-milkchocolate {
+    order: 1;
+  }
+
+  .ingridients-item-milk {
+    order: 3;
+  }
+
+  .ingridients-item-nuts {
+    order: 4;
+  }
+
+  .ingridients-item-coffee {
+    order: 2;
+  }
+
+  .ingridients-item-cacao {
+    order: 5;
+  }
+
+  .ingridients-item-raspberry {
+    order: 6;
+  }
+
+  .ingridients-item-coconutoil {
+    order: 7;
+  }
+
+  .ingridients-list {
+    gap: 32px;
+  }
+
+  .ingridients-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .ingredients-imgbox {
+    padding: 32px 50px 16px 50px;
+  }
+
+  .ingredients-title-two {
+    padding-bottom: 50px;
+    width: 411px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .ingridients {
+    padding: 60px 0;
+  }
+
+  .ingridients-item-milkchocolate {
+    order: 1;
+  }
+
+  .ingridients-item-milk {
+    order: 2;
+  }
+
+  .ingridients-item-nuts {
+    order: 3;
+  }
+
+  .ingridients-item-coffee {
+    order: 4;
+  }
+
+  .ingridients-item-cacao {
+    order: 5;
+  }
+
+  .ingridients-item-raspberry {
+    order: 6;
+  }
+
+  .ingridients-item-coconutoil {
+    order: 7;
+  }
+
+  .ingridients-list {
+    gap: 32px;
+    row-gap: 24px;
+  }
+
+  .ingridients-item {
+    width: calc((100% - 32px * 3) / 4);
+  }
+
+  .ingredients-imgbox {
+    padding: 28px 25px 36px 23px;
+  }
+
+  .ingredients-imgbox-img {
+    width: 214px;
+    height: 160px;
+  }
+}
