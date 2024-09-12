@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -68,7 +72,7 @@ button {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
@@ -76,7 +80,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     padding-left: 32px;
@@ -323,9 +327,9 @@ button {
     padding: 0 32px 20px 32px;
   }
 
-  .container {
+  /* .container {
     max-width: 768px;
-  }
+  } */
 
   .startpage-container {
     padding: 671px 40px 40px;
@@ -357,9 +361,9 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  /* .container {
     max-width: 1200px;
-  }
+  } */
 
   .startpage-container {
     padding: 381px 40px 40px;
@@ -435,9 +439,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+
+  /* .container {
     max-width: 768px;
-  }
+  } */
 
   .benefits {
     margin-top: 20px;
@@ -466,9 +471,10 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+
+  /* .container {
     max-width: 1200px;
-  }
+  } */
 
   .benefits {
     margin-top: 40px;
@@ -515,14 +521,17 @@ button {
 }
 
 /*--------------- ingridients ---------------*/
+
 .ingridients {
   padding: 40px 0;
 }
 
 .ingridients-container {
-  min-width: 335px;
-  max-width: 375px;
   padding: 0 20px;
+}
+
+.title-two {
+  text-transform: uppercase;
 }
 
 .ingredients-title-two {
@@ -605,10 +614,9 @@ button {
 
 @media screen and (min-width: 768px) {
 
-  .container {
+  /* .container {
     max-width: 768px;
-
-  }
+  } */
 
   .ingridients {
     padding: 50px 0;
@@ -671,9 +679,10 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+
+  /* .container {
     max-width: 1200px;
-  }
+  } */
 
   .ingridients {
     padding: 60px 0;
@@ -723,5 +732,154 @@ button {
   .ingredients-imgbox-img {
     width: 214px;
     height: 160px;
+  }
+}
+
+/*--------------- howitsmade ---------------*/
+
+.howitsmade {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.howitsmade-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.howitsmade-title-two {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+
+.howitsmade-picture {
+  margin-bottom: 20px;
+}
+
+.howitsmade-box-img {
+  border-radius: 15px;
+}
+
+.howitsmade-text {
+  background-color: #fff;
+  border-radius: 15px;
+
+}
+
+.howitsmade-text-box {
+  padding: 20px 14px;
+}
+
+.howitsmade-title-three {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #111;
+  padding-bottom: 20px;
+}
+
+.howitsmade-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 16px;
+}
+
+.howitsmade-item {
+  position: relative;
+}
+
+.howitsmade-item-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.howitsmade-item::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 5px;
+  left: -16px;
+  border-radius: 100%;
+  background-color: #4c4c4c;
+  border: 1px #eceded solid;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* .container {
+    max-width: 768px;
+  } */
+
+  .howitsmade {
+    margin: 50px 0;
+  }
+
+  .howitsmade-container {
+    padding: 0 77px;
+  }
+
+  .howitsmade-title-two {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+
+  .howitsmade-text-box {
+    padding: 32px;
+  }
+
+  .howitsmade-title-three {
+    padding-bottom: 28px;
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .howitsmade {
+    margin: 60px 0;
+  }
+
+  .howitsmade-container {
+    padding: 0 32px;
+  }
+
+  .howitsmade-title-two {
+    line-height: 1.17;
+  }
+
+  .howitsmade-picture {
+    margin-bottom: 0px;
+    max-width: 600px;
+    flex-shrink: 1;
+  }
+
+  .howitsmade-text {
+    max-width: 516px;
+  }
+
+  .howitsmade-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .howitsmade-title-three {
+    max-width: 340px;
+  }
+
+  .howitsmade-item-text {
+    width: 430 px;
   }
 }
