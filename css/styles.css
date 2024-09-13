@@ -1127,3 +1127,149 @@ button {
     width: calc((100% - 16px * 2) / 3);
   }
 }
+
+/*--------------- chocolateisloved ---------------*/
+
+.chocolateisloved {
+  padding: 40px 0;
+}
+
+.chocolateisloved-section {
+  padding: 0 20px;
+}
+
+.chocolateisloved-title-two {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 74px;
+}
+
+.chocolateisloved-list {
+  display: flex;
+  justify-content: center;
+}
+
+.chocolateisloved-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  position: relative;
+  margin-bottom: 32px;
+  width: 335px;
+}
+
+.chocolateisloved-item-two {
+  display: none;
+}
+
+.chocolateisloved-item-three {
+  display: none;
+}
+
+.chocolateisloved-item-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.chocolateisloved-item-img {
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -42px;
+}
+
+.chocolateisloved-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+  padding: 56px 0 24px;
+}
+
+.chocolateisloved-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  padding: 0 18px 42px 18px;
+}
+
+.chocolateisloved-btn {
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chocolateisloved-btn:hover,
+.chocolateisloved-btn:active {
+  color: #fff;
+  background-color: #fd9222;
+}
+
+@media screen and (min-width:768px) {
+
+  .chocolateisloved {
+    padding: 50px 0;
+  }
+
+  .chocolateisloved-section {
+    padding: 0 32px;
+  }
+
+  .chocolateisloved-title-two {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 91px;
+  }
+
+  .chocolateisloved-item-two {
+    display: block;
+  }
+
+  .chocolateisloved-list {
+    gap: 16px;
+  }
+
+  .chocolateisloved-item {
+    margin-bottom: 50px;
+  }
+
+  .chocolateisloved-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .chocolateisloved {
+    padding: 60px 0;
+  }
+
+  .chocolateisloved-item-three {
+    display: block;
+  }
+
+  .chocolateisloved-list {
+    gap: 28px;
+  }
+}
