@@ -16,14 +16,14 @@
 </head>
 
 <body>
-  <header class="header-section section">
+  <header class="header">
     <div class="header-container container">
       <nav class="header-nav">
         <div class="header-logo-svg-box">
           <a class="header-logo" href="index.html">
             <span class="header-logo-span">SIMPLY</span> CHOCOLATE
           </a>
-          <svg class="header-logo-svg" width="24" height="24">
+          <svg class="header-logo-svg">
             <use href="./images/icons.svg#icon-chocolate"></use>
           </svg>
         </div>
@@ -43,21 +43,21 @@
             <ul class="header-social-list">
               <li class="header-social-item">
                 <a class="header-social-link" href="https://www.instagram.com/">
-                  <svg class="header-social-link-svg" width="24" height="24" fill="none">
+                  <svg class="header-social-link-svg" fill="none">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="header-social-item">
                 <a class="header-social-link" href="https://facebook.com/">
-                  <svg class="header-social-link-svg" width="24" height="24" fill="none">
+                  <svg class="header-social-link-svg" fill="none">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="header-social-item">
                 <a class="header-social-link" href="https://twitter.com/">
-                  <svg class="header-social-link-svg" width="24" height="24" fill="none">
+                  <svg class="header-social-link-svg" fill="none">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -65,12 +65,20 @@
             </ul>
           </div>
         </div>
+
+        <button class="header-mobile-button" type="button">
+          <svg class="header-mobile-button-svg" width="24" height="16">
+            <use href="./images/icons.svg#icon-Icon-btn"></use>
+          </svg>
+        </button>
       </nav>
+
+      <div class="header-mobile-menu"></div>
     </div>
   </header>
 
   <main>
-    <section class="startpage-section section">
+    <section class="startpage">
       <div class="startpage-container container">
         <h1 class="startpage-title">Treat yourself or a loved one to <br>
           our finest ingredients for a moment
@@ -500,29 +508,28 @@
           <div class="footer-boxtop-social">
             <p class="footer-social-title">Social networks</p>
             <ul class="footer-social-list">
-              <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="footer-social-link" href="https://www.instagram.com/">
-                    <svg class="footer-social-link-svg" fill="none">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="footer-social-link" href="https://facebook.com/">
-                    <svg class="footer-social-link-svg" fill="none">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="footer-social-link" href="https://twitter.com/">
-                    <svg class="footer-social-link-svg" fill="none">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="https://www.instagram.com/">
+                  <svg class="footer-social-link-svg" fill="none">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="https://facebook.com/">
+                  <svg class="footer-social-link-svg" fill="none">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="https://twitter.com/">
+                  <svg class="footer-social-link-svg" fill="none">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="footer-boxtop-contacts">
             <p class="footer-social-title">Contact us</p>
@@ -562,7 +569,7 @@
         </nav>
         <div class="footer-boxbuttom-subscribe">
           <form class="footer-boxbuttom-form">
-            <label class="footer-boxbuttom-form-label" for="email">
+            <label class="footer-boxbuttom-form-label">
               <input class="footer-boxbuttom-form-email" type="email" name="email" placeholder="Enter your email">
             </label>
             <button class="footer-boxbuttom-form-button" type="submit">Subscribe</button>

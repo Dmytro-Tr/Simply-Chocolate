@@ -33,6 +33,9 @@
   <path stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M9.143 16h13.714M22.857 16l-3.429-3.429M22.857 16l-3.429 3.429"></path>
   <path stroke-width="1.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M16 30.857c8.205 0 14.857-6.652 14.857-14.857s-6.652-14.857-14.857-14.857c-8.205 0-14.857 6.652-14.857 14.857s6.652 14.857 14.857 14.857z"></path>
 </symbol>
+<symbol id="icon-Icon-btn" viewBox="0 0 48 32">
+  <path stroke-width="4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M3 16h42M3 2h42M3 30h42"></path>
+</symbol>
 
 </defs>
 </svg>
