@@ -218,9 +218,29 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    margin: 24px 0 32px 0;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .header-nav-social-box {
+    gap: 90px;
+  }
+
+}
+
 /*--------------- header ---------------*/
 
 /*--------------- startpage ---------------*/
+
+.startpage {
+  padding-bottom: 80px;
+}
 
 .startpage-section {
   padding: 0 20px 40px 20px;
@@ -311,7 +331,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.startpage-button-buynow:active {
+.startpage-button-buynow:hover {
   background-color: #fcf1e0;
   color: #fd9222;
 }
@@ -326,7 +346,7 @@ button {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.startpage-button-howitsmade:active {
+.startpage-button-howitsmade:hover {
   border: 1px solid #fd9222;
   color: #fd9222;
 }
@@ -374,6 +394,11 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+  .startpage {
+    padding-bottom: 40px;
+  }
+
   .startpage-section {
     padding: 0 32px 20px 32px;
   }
@@ -412,9 +437,10 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  /* .container {
-    max-width: 1200px;
-  } */
+
+  .startpage {
+    padding-bottom: 80px;
+  }
 
   .startpage-container {
     padding: 381px 40px 40px;
@@ -429,7 +455,6 @@ button {
 /*--------------- benefits ---------------*/
 
 .benefits {
-  padding: 40px;
   background-color: #1e1823;
 }
 
@@ -490,15 +515,6 @@ button {
 
 @media screen and (min-width: 768px) {
 
-  /* .container {
-    max-width: 768px;
-  } */
-
-  .benefits {
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-
   .benefits-container {
     padding: 50px 32px;
   }
@@ -521,15 +537,6 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-
-  /* .container {
-    max-width: 1200px;
-  } */
-
-  .benefits {
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
 
   .benefits-container {
     padding: 50px 50px;
@@ -573,7 +580,8 @@ button {
 /*--------------- ingridients ---------------*/
 
 .ingridients {
-  padding: 40px 0;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .ingridients-container {
@@ -664,12 +672,11 @@ button {
 
 @media screen and (min-width: 768px) {
 
-  /* .container {
-    max-width: 768px;
-  } */
+
 
   .ingridients {
-    padding: 50px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .ingridients-container {
@@ -730,12 +737,9 @@ button {
 
 @media screen and (min-width: 1200px) {
 
-  /* .container {
-    max-width: 1200px;
-  } */
-
   .ingridients {
-    padding: 60px 0;
+    padding-top: 120px;
+    padding-bottom: 60px;
   }
 
   .ingridients-item-milkchocolate {
@@ -1004,6 +1008,12 @@ button {
   color: #111;
 
   margin-bottom: 32px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ourproducts-link:hover {
+  border: 1px solid #fd9222;
+  color: #fd9222;
 }
 
 @media screen and (min-width: 768px) {
@@ -1397,6 +1407,11 @@ button {
 
 .footer-contacts-item {
   margin-bottom: 4px;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts-item:hover {
+  scale: 1.1;
 }
 
 .footer-contacts-item-info {
@@ -1423,7 +1438,14 @@ button {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+}
 
+.footer-boxbuttom-nav-item {
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-boxbuttom-nav-item:hover {
+  scale: 1.1;
 }
 
 .footer-boxbuttom-form {
