@@ -732,6 +732,8 @@ button {
   height: 24px;
 }
 
+.ingridients-svgbox-svg {}
+
 .ingredients-imgbox {
   padding: 32px 49px 16px 50px;
 }
@@ -1540,6 +1542,7 @@ button {
 .footer-boxbuttom-form {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .footer-boxbuttom-form-email {
