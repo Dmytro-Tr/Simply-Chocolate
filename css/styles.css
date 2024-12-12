@@ -666,14 +666,14 @@ button {
   }
 }
 
-/*--------------- ingridients ---------------*/
+/*--------------- ingredients ---------------*/
 
-.ingridients {
+.ingredients {
   padding-top: 80px;
   padding-bottom: 40px;
 }
 
-.ingridients-container {
+.ingredients-container {
   padding: 0 20px;
 }
 
@@ -700,27 +700,27 @@ button {
   color: #fd9222;
 }
 
-.ingridients-list {
+.ingredients-list {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.ingridients-item {
+.ingredients-item {
   border-radius: 15px;
   position: relative;
 }
 
-.ingridients-item-orange {
+.ingredients-item-orange {
   background-color: #fd9222;
 }
 
-.ingridients-item-white {
+.ingredients-item-white {
   background-color: #fff;
   border: 1px solid #fd9222;
 }
 
-.ingridients-item-black {
+.ingredients-item-black {
   background-color: #1e1823;
 }
 
@@ -732,7 +732,7 @@ button {
   height: 24px;
 }
 
-.ingridients-svgbox-svg {}
+.ingredients-svgbox-svg {}
 
 .ingredients-imgbox {
   padding: 32px 49px 16px 50px;
@@ -757,7 +757,7 @@ button {
   color: #111;
 }
 
-.ingridients-item-none {
+.ingredients-item-none {
   display: none;
 }
 
@@ -765,52 +765,52 @@ button {
 
 
 
-  .ingridients {
+  .ingredients {
     padding-top: 100px;
     padding-bottom: 50px;
   }
 
-  .ingridients-container {
+  .ingredients-container {
     padding: 0 32px;
   }
 
-  .ingridients-item-none {
+  .ingredients-item-none {
     display: block;
   }
 
-  .ingridients-item-milkchocolate {
+  .ingredients-item-milkchocolate {
     order: 1;
   }
 
-  .ingridients-item-milk {
+  .ingredients-item-milk {
     order: 3;
   }
 
-  .ingridients-item-nuts {
+  .ingredients-item-nuts {
     order: 4;
   }
 
-  .ingridients-item-coffee {
+  .ingredients-item-coffee {
     order: 2;
   }
 
-  .ingridients-item-cacao {
+  .ingredients-item-cacao {
     order: 5;
   }
 
-  .ingridients-item-raspberry {
+  .ingredients-item-raspberry {
     order: 6;
   }
 
-  .ingridients-item-coconutoil {
+  .ingredients-item-coconutoil {
     order: 7;
   }
 
-  .ingridients-list {
+  .ingredients-list {
     gap: 32px;
   }
 
-  .ingridients-item {
+  .ingredients-item {
     width: calc((100% - 32px) / 2);
   }
 
@@ -828,45 +828,45 @@ button {
 
 @media screen and (min-width: 1200px) {
 
-  .ingridients {
+  .ingredients {
     padding-top: 120px;
     padding-bottom: 60px;
   }
 
-  .ingridients-item-milkchocolate {
+  .ingredients-item-milkchocolate {
     order: 1;
   }
 
-  .ingridients-item-milk {
+  .ingredients-item-milk {
     order: 2;
   }
 
-  .ingridients-item-nuts {
+  .ingredients-item-nuts {
     order: 3;
   }
 
-  .ingridients-item-coffee {
+  .ingredients-item-coffee {
     order: 4;
   }
 
-  .ingridients-item-cacao {
+  .ingredients-item-cacao {
     order: 5;
   }
 
-  .ingridients-item-raspberry {
+  .ingredients-item-raspberry {
     order: 6;
   }
 
-  .ingridients-item-coconutoil {
+  .ingredients-item-coconutoil {
     order: 7;
   }
 
-  .ingridients-list {
+  .ingredients-list {
     gap: 32px;
     row-gap: 24px;
   }
 
-  .ingridients-item {
+  .ingredients-item {
     width: calc((100% - 32px * 3) / 4);
   }
 
