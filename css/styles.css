@@ -709,15 +709,49 @@ button {
 .ingredients-item {
   border-radius: 15px;
   position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.ingredients-front,
+.ingredients-back {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
 }
 
 
 .ingredients-front {
-  position: relative;
+  backface-visibility: hidden;
+  transition: all 250ms ease;
 }
 
-.ingredients-back {}
+.ingredients-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  color: #111;
+  background-color: #fff;
 
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 250ms ease;
+  border: 1px solid #fd9222;
+}
+
+.ingredients-item:hover .ingredients-front {
+  transform: rotateY(-180deg);
+}
+
+.ingredients-item:hover .ingredients-back {
+  transform: rotateY(0);
+}
 
 .ingredients-item-orange {
   background-color: #fd9222;
@@ -779,6 +813,7 @@ button {
   text-transform: uppercase;
   color: #111;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .ingredients-info-subtitle {
@@ -819,9 +854,8 @@ button {
   line-height: 1.28571;
   letter-spacing: -0.02em;
   color: #111;
+  overflow: auto;
 }
-
-/* FLIP CARD STYLING */
 
 
 /*------------------*/
@@ -840,7 +874,7 @@ button {
     display: block;
   }
 
-  .ingredients-item-milkchocolate {
+  /* .ingredients-item-milkchocolate {
     order: 1;
   }
 
@@ -866,7 +900,7 @@ button {
 
   .ingredients-item-coconutoil {
     order: 7;
-  }
+  } */
 
   .ingredients-list {
     gap: 32px;
