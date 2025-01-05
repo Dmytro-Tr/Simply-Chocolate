@@ -1853,22 +1853,79 @@ button {
   fill: #fd9222;
 }
 
+
+
 .reviews-checkbox-label {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .reviews-checkbox-input {}
 
-.visually-hidden {}
+.reviews-checkbox-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  background-color: inherit;
+  fill: transparent;
+  flex-shrink: 0;
+  margin-right: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.reviews-checkbox-icon-box {}
+.reviews-checkbox-svg {
+  width: 10px;
+  height: auto;
+  /* fill: red; */
+}
 
-.reviews-checkbox-box-svg {}
+.reviews-checkbox-label .reviews-checkbox-span {
+  order: -1;
+}
 
-.reviews-checkbox-box-use {}
+input:checked+.reviews-checkbox-label>.reviews-checkbox-span {
+  background-color: #fd9222;
+  border: none;
+  fill: #ffffff;
+}
 
-.reviews-checkbox-text {}
+.reviews-checkbox-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  margin-bottom: 32px;
+}
 
-.reviews-span {}
+.reviews-span {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
+}
 
-.reviews-button-submit {}
+.reviews-button-submit {
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 93px;
+  height: 41px;
+  background: #fd9222;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-button-submit:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
