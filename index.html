@@ -656,12 +656,12 @@
               but crunchy.</p>
           </li>
         </ul>
-        <button class="chocolateisloved-btn" type="button">Leave a review</button>
+        <button class="chocolateisloved-btn" type="button" data-modal-open>Leave a review</button>
       </div>
 
-      <div class="reviews-section section">
+      <div class="reviews-section section is-open" data-modal>
         <div class="review-container container">
-          <button class="reviews-button" type="button">
+          <button class="reviews-button" type="button" data-modal-close>
             <svg class="reviews-svg-close">
               <use href="./images/icons.svg#icon-x"></use>
             </svg>
@@ -674,7 +674,7 @@
                 Name
               </label>
               <div class="reviews-form-input-box">
-                <input class="reviews-form-input" type="text" name="name" id="">
+                <input class="reviews-form-input" type="text" name="user-name" id="user-name" required>
                 <svg class="reviews-form-svg" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-user-reviews"></use>
                 </svg>
@@ -685,7 +685,7 @@
                 Email
               </label>
               <div class="reviews-form-input-box">
-                <input class="reviews-form-input" type="email" name="email" id="">
+                <input class="reviews-form-input" type="email" name="email" id="email" required>
                 <svg class="reviews-form-svg" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-mail-reviews"></use>
                 </svg>
@@ -696,7 +696,7 @@
                 Phone number
               </label>
               <div class="reviews-form-input-box">
-                <input class="reviews-form-input" type="tel" name="number" id="">
+                <input class="reviews-form-input" type="tel" name="phone" id="phone">
                 <svg class="reviews-form-svg" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-phone-reviews"></use>
                 </svg>
