@@ -1374,6 +1374,10 @@ button {
   margin-bottom: 74px;
 }
 
+.swiper {
+  padding-top: 42px;
+}
+
 .chocolateisloved-list {
   display: flex;
   justify-content: center;
@@ -1386,6 +1390,7 @@ button {
   background: #fff;
   position: relative;
   margin-bottom: 32px;
+  margin-top: 43px;
   width: 335px;
 }
 
@@ -1471,9 +1476,9 @@ button {
     display: block;
   }
 
-  .chocolateisloved-list {
+  /* .chocolateisloved-list {
     gap: 16px;
-  }
+  } */
 
   .chocolateisloved-item {
     margin-bottom: 50px;
@@ -1494,9 +1499,9 @@ button {
     display: block;
   }
 
-  .chocolateisloved-list {
+  /* .chocolateisloved-list {
     gap: 28px;
-  }
+  } */
 }
 
 /*--------------- footer ---------------*/
@@ -2043,10 +2048,4 @@ input:checked+.reviews-checkbox-label>.reviews-checkbox-span {
   .reviews-checkbox-label {
     align-items: center;
   }
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
-  background-color: aqua;
 }
