@@ -1378,21 +1378,23 @@ button {
   padding-top: 42px;
 }
 
-.chocolateisloved-list {
+/* .chocolateisloved-list {
   display: flex;
   justify-content: center;
-}
+} */
 
 .chocolateisloved-item {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  box-shadow: 0 9px 10px 0 rgba(07, 17, 17, 0.03);
   background: #fff;
   position: relative;
   margin-bottom: 32px;
   margin-top: 43px;
   width: 335px;
+  min-height: 200px;
   height: auto;
+  background-color: inherit;
 }
 
 .chocolateisloved-item-photo {
