@@ -15,6 +15,7 @@
   <title>Simply Chocolate</title>
   <meta name="description" content="Chocolate a delicious cure for a bad day">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -657,6 +658,29 @@
           </li>
         </ul>
         <button class="chocolateisloved-btn" type="button" data-modal-open>Leave a review</button>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+
       </div>
 
       <div class="reviews-section section" data-modal>
@@ -814,10 +838,11 @@
     </div>
   </footer>
 
-
-
   <script src="./js/reviews.js "></script>
   <script src="./js/menu.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>
