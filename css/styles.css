@@ -1392,14 +1392,7 @@ button {
   margin-bottom: 32px;
   margin-top: 43px;
   width: 335px;
-}
-
-.chocolateisloved-item-two {
-  display: none;
-}
-
-.chocolateisloved-item-three {
-  display: none;
+  height: auto;
 }
 
 .chocolateisloved-item-photo {
@@ -1472,14 +1465,6 @@ button {
     margin-bottom: 91px;
   }
 
-  .chocolateisloved-item-two {
-    display: block;
-  }
-
-  /* .chocolateisloved-list {
-    gap: 16px;
-  } */
-
   .chocolateisloved-item {
     margin-bottom: 50px;
   }
@@ -1495,13 +1480,6 @@ button {
     padding: 60px 0;
   }
 
-  .chocolateisloved-item-three {
-    display: block;
-  }
-
-  /* .chocolateisloved-list {
-    gap: 28px;
-  } */
 }
 
 /*--------------- footer ---------------*/
