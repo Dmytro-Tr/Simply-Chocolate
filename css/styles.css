@@ -1568,11 +1568,11 @@ button {
 .footer-contacts-item {
   margin-bottom: 4px;
   /* scale: unset; */
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts-item:hover {
-  scale: (1.1);
+  transform: scale(1.1);
 }
 
 .footer-contacts-item-info {
