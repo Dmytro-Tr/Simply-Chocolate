@@ -1572,7 +1572,7 @@ button {
 }
 
 .footer-contacts-item:hover {
-  transform: scale(1.1);
+  transform: scale (1.1);
 }
 
 .footer-contacts-item-info {
@@ -1611,11 +1611,11 @@ button {
 }
 
 .footer-boxbuttom-nav-item {
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-boxbuttom-nav-item:hover {
-  scale: 1.1;
+  transform: scale (1.1);
 }
 
 .footer-boxbuttom-form {
