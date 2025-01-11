@@ -1,7 +1,3 @@
-::-webkit-scrollbar {
-  width: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -742,6 +738,10 @@ button {
   align-items: center;
 }
 
+.ingredients-info-desk::-webkit-scrollbar {
+  width: 0;
+}
+
 
 .ingredients-front {
   backface-visibility: hidden;
@@ -1104,7 +1104,7 @@ button {
   }
 
   .howitsmade-item-text {
-    width: 430 px;
+    width: 430px;
   }
 }
 
@@ -1567,6 +1567,7 @@ button {
 
 .footer-contacts-item {
   margin-bottom: 4px;
+  scale: unset;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1781,6 +1782,10 @@ button {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
+}
+
+.review-container::-webkit-scrollbar {
+  width: 0;
 }
 
 .reviews-button {
