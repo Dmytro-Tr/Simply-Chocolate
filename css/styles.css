@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -263,7 +267,7 @@ button {
 
 .backdrop-container {
   position: relative;
-  padding: 136px 0 20px 20px;
+  padding: 136px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -281,6 +285,11 @@ button {
 .backdrop-close-svg {
   stroke-width: 2px;
   fill: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-close-svg:hover {
+  fill: #fd9222;
 }
 
 .backdrop-nav {
@@ -303,14 +312,16 @@ button {
   line-height: 1.14286;
   letter-spacing: -0.02em;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-nav-link-home {
-  color: #fd9222
+.backdrop-nav-link:hover {
+  color: #fd9222;
 }
 
 .backdrop-social-list {
   display: flex;
+  justify-content: center;
   gap: 12px;
 }
 

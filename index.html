@@ -21,7 +21,7 @@
 <body>
   <header class="header">
     <div class="header-container container">
-      <nav class="header-nav">
+      <nav class="header-nav" id="homepage">
         <div class="header-logo-svg-box">
           <a class="header-logo" href="index.html">
             <span class="header-logo-span">SIMPLY</span> CHOCOLATE
@@ -91,34 +91,36 @@
       <nav class="backdrop-nav">
         <ul class="backdrop-nav-list">
           <li class="backdrop-nav-item">
-            <a class="backdrop-nav-link backdrop-nav-link-home" href="index.html">Home</a>
+            <a href="#homepage" class="backdrop-nav-link" aria-label="Home page">Home</a>
           </li>
           <li class="backdrop-nav-item">
-            <a class="backdrop-nav-link" href="#howitsmade">How it’s made?</a>
+            <a href="#howitsmade" class="backdrop-nav-link" aria-label="How it's made">How it’s made?</a>
           </li>
           <li class="backdrop-nav-item">
-            <a class="backdrop-nav-link" href="#isloved">Chocolate is loved</a>
+            <a href="#isloved" class="backdrop-nav-link" aria-label="Chocolate is loved">Chocolate is
+              loved</a>
           </li>
         </ul>
       </nav>
       <div class="backdrop-social">
         <ul class="backdrop-social-list">
           <li class="backdrop-social-item">
-            <a class="backdrop-social-link" href="https://www.instagram.com/" aria-label="More on instagram">
+            <a class="backdrop-social-link" href="https://www.instagram.com/" aria-label="More on instagram"
+              target="_blank">
               <svg class="backdrop-social-link-svg" fill="none">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="backdrop-social-item">
-            <a class="backdrop-social-link" href="https://facebook.com/" aria-label="More on facebook">
+            <a class="backdrop-social-link" href="https://facebook.com/" aria-label="More on facebook" target="_blank">
               <svg class="backdrop-social-link-svg" fill="none">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="backdrop-social-item">
-            <a class="backdrop-social-link" href="https://twitter.com/" aria-label="More on twitter">
+            <a class="backdrop-social-link" href="https://twitter.com/" aria-label="More on twitter" target="_blank">
               <svg class="backdrop-social-link-svg" fill="none">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
@@ -813,7 +815,7 @@
         <nav class="footer-boxbuttom-nav">
           <ul class="footer-boxbuttom-nav-list">
             <li class="footer-boxbuttom-nav-item">
-              <a class="footer-boxbuttom-nav-link" href="index.html">Home</a>
+              <a class="footer-boxbuttom-nav-link" href="#homepage">Home</a>
             </li>
             <li class="footer-boxbuttom-nav-item">
               <a class="footer-boxbuttom-nav-link" href="#howitsmade">How it’s made?</a>
@@ -842,9 +844,9 @@
   </footer>
 
   <script src="./js/reviews.js "></script>
-  <script src="./js/menu.js"></script>
+  <script src="./js/menu.js" defer></script>
 
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/4.0.0-beta.0/bodyScrollLock.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
