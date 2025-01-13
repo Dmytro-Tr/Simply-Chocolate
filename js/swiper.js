@@ -31,3 +31,17 @@ const swiper = new Swiper('.swiper', {
   },
   allowTouchMove: true,
 });
+
+const cards = document.querySelectorAll('.chocolateisloved-item');
+let maxHeight = 0;
+
+// Знайти максимальну висоту
+cards.forEach(card => {
+  const cardHeight = card.offsetHeight;
+  if (cardHeight > maxHeight) maxHeight = cardHeight;
+});
+
+// Встановити однакову висоту для всіх карток
+cards.forEach(card => {
+  card.style.height = `${maxHeight}px`;
+});
