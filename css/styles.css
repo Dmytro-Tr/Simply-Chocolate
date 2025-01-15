@@ -807,7 +807,7 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fff;
-  padding: 0 0 28px 28px;
+  padding: 0 0 28px 0;
 }
 
 .ingredients-title-three-black {
